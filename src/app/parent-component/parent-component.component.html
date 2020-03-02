@@ -1,0 +1,10 @@
+<app-child-component
+    [childName]="name"
+    [childAge]="age"
+    (addEventFromChild)="addParentEvent($event)">
+</app-child-component>
+
+
+<ul>
+  <li *ngFor="let thing of things">{{thing}}</li>
+</ul>
