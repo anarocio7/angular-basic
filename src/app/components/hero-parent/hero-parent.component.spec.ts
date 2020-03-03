@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewChildComponent } from './view-child.component';
+import { HeroParentComponent } from './hero-parent.component';
 
-describe('ViewChildComponent', () => {
-  let component: ViewChildComponent;
-  let fixture: ComponentFixture<ViewChildComponent>;
+describe('HeroParentComponent', () => {
+  let component: HeroParentComponent;
+  let fixture: ComponentFixture<HeroParentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ViewChildComponent ]
+      declarations: [ HeroParentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewChildComponent);
+    fixture = TestBed.createComponent(HeroParentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

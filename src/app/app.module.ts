@@ -2,23 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ChildComponentComponent } from './child-component/child-component.component';
-import { ParentComponentComponent } from './parent-component/parent-component.component';
-import { ViewChildComponent } from './view-child/view-child.component';
-import { ChildTwoComponent } from './child-two/child-two.component';
+import { HeroParentComponent } from './components/hero-parent/hero-parent.component';
+import { HeroChildComponent } from './components/hero-child/hero-child.component';
+import { NameChildComponent } from './components/name-child/name-child.component';
+import { DummyServiceService } from './dummy-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponentComponent,
-    ParentComponentComponent,
-    ViewChildComponent,
-    ChildTwoComponent
+    HeroParentComponent,
+    HeroChildComponent,
+    NameChildComponent,
+
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DummyServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
